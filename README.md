@@ -55,6 +55,8 @@ Odoo Lunch is a web-based application that allows users to order food online. It
 3. To manage the database, go to http://localhost:8069/web/database/selector.
 
 **UnitTest Cases:**
+
+
 To run unit test cases for the lunch app in Odoo on the server, follow these steps:
 
 1. In the odoo.conf file, set the following options:
@@ -66,11 +68,15 @@ To run unit test cases for the lunch app in Odoo on the server, follow these ste
 
 
 **Selenium TestCases**
+
+
 1)Install the ChromeDriver WebDriver and add the following path to the environmental variables:
 - C:\Users\username\Downloads\chromedriver_win32
 2)pip selenium install
 
 **Keyword-Driven Test Case:**
+
+
 1)Install the Selenium library for Robot Framework using pip command: pip install robotframework-seleniumlibrary
 2)Similar to selenium we required webdriver as well.
 
