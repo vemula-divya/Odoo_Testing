@@ -30,3 +30,32 @@ For a standard installation please follow the <a href="https://www.odoo.com/docu
 from the documentation.
 
 To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/15.0/developer/howtos.html">the developer tutorials</a>
+
+
+
+------------------------------
+PyCharm is an Integrated Development Environment (IDE) specifically designed for Python programming.
+
+To set up environmental variables for Selenium automation, follow these steps:
+
+1. Install Python and add the following paths to the environmental variables:
+- C:\Users\username\AppData\Local\Programs\Python\Python311\Scripts\
+- C:\Users\username\AppData\Local\Programs\Python\Python311\
+
+2. Install the ChromeDriver WebDriver and add the following path to the environmental variables:
+- C:\Users\username\Downloads\chromedriver_win32
+
+To set up Odoo for unit testing and database management, follow these steps:
+
+1. Install PostgreSQL and create a username and password for it.
+2. During the installation of Odoo, enter the master password on the homepage and set up a new database with the name "Odoo_new" and password "Odoo_15". For a new user with the email "d1227@gmail.com", create a new database with the name "Odoo_new1", password "Odoo_151", and username "d1227@gmail.com".
+3. To manage the database, go to http://localhost:8069/web/database/selector.
+
+To run unit test cases for the lunch app in Odoo on the server, follow these steps:
+
+1. In the odoo.conf file, set the following options:
+- test_enable = True
+- test_tags = lunch
+- log_level = test
+2. Add the necessary dependencies to the manifest.py file.
+3. Run the server and check the odoo.log file by starting localhost.
