@@ -34,9 +34,12 @@ To learn the software, we recommend the <a href="https://www.odoo.com/slides">Od
 
 
 ------------------------------
-PyCharm is an Integrated Development Environment (IDE) specifically designed for Python programming.
+In this project added three types of testing for the Odoo Lunch application: unit testing, Selenium testing, and Keyword-Driven testing.
 
-To set up environmental variables for Selenium automation, follow these steps:
+Odoo Lunch is a web-based application that allows users to order food online. It is a module in the larger Odoo ERP system, which is a suite of open-source business applications that cover various areas such as accounting, inventory management, project management, and more. Odoo Lunch is designed to help companies streamline their food ordering process and make it more efficient. Users can browse through the available menu items, place orders, and pay online using their preferred payment method. The application is customizable and can be adapted to suit the specific needs of different businesses.
+
+
+**To set up environmental variables for Selenium automation, follow these steps:**
 
 1. Install Python and add the following paths to the environmental variables:
 - C:\Users\username\AppData\Local\Programs\Python\Python311\Scripts\
@@ -45,12 +48,13 @@ To set up environmental variables for Selenium automation, follow these steps:
 2. Install the ChromeDriver WebDriver and add the following path to the environmental variables:
 - C:\Users\username\Downloads\chromedriver_win32
 
-To set up Odoo for unit testing and database management, follow these steps:
-
+**To set up Odoo for unit testing and database management, follow these steps:
+**
 1. Install PostgreSQL and create a username and password for it.
 2. During the installation of Odoo, enter the master password on the homepage and set up a new database with the name "Odoo_new" and password "Odoo_15". For a new user with the email "d1227@gmail.com", create a new database with the name "Odoo_new1", password "Odoo_151", and username "d1227@gmail.com".
 3. To manage the database, go to http://localhost:8069/web/database/selector.
 
+**UnitTest Cases:**
 To run unit test cases for the lunch app in Odoo on the server, follow these steps:
 
 1. In the odoo.conf file, set the following options:
@@ -59,3 +63,17 @@ To run unit test cases for the lunch app in Odoo on the server, follow these ste
 - log_level = test
 2. Add the necessary dependencies to the manifest.py file.
 3. Run the server and check the odoo.log file by starting localhost.
+
+
+**Selenium TestCases**
+1)Install the ChromeDriver WebDriver and add the following path to the environmental variables:
+- C:\Users\username\Downloads\chromedriver_win32
+2)pip selenium install
+
+**Keyword-Driven Test Case:**
+1)Install the Selenium library for Robot Framework using pip command: pip install robotframework-seleniumlibrary
+2)Similar to selenium we required webdriver as well.
+
+
+
+
