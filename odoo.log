@@ -1,0 +1,54 @@
+2023-05-12 20:45:14,142 10728 INFO ? odoo.service.server: Initiating shutdown 
+2023-05-12 20:45:14,147 10728 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2023-05-12 20:45:14,395 10728 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 7 connections  
+2023-05-12 20:45:14,595 10728 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:14] "POST /longpolling/poll HTTP/1.1" 200 - 9 0.019 39.753
+2023-05-12 20:45:22,884 5012 INFO ? odoo: Odoo version 15.0-20230402 
+2023-05-12 20:45:22,885 5012 INFO ? odoo: Using configuration file at C:\Users\divyavemula\Documents\Odoo\server\odoo.conf 
+2023-05-12 20:45:22,885 5012 INFO ? odoo: addons paths: ['C:\\Users\\divyavemula\\Documents\\Odoo\\server\\odoo\\addons', 'c:\\users\\divyavemula\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'c:\\users\\divyavemula\\documents\\odoo\\server\\odoo\\addons'] 
+2023-05-12 20:45:22,885 5012 INFO ? odoo: database: Odoo_15@localhost:5432 
+2023-05-12 20:45:23,536 5012 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\divyavemula\Documents\Odoo\thirdparty\wkhtmltopdf.exe 
+2023-05-12 20:45:25,051 5012 INFO ? odoo.service.server: HTTP service (werkzeug) running on CSUF-F3KZMW2.lan:8069 
+2023-05-12 20:45:29,030 5012 INFO odoo_new2 odoo.modules.loading: loading 1 modules... 
+2023-05-12 20:45:29,467 5012 INFO odoo_new2 odoo.modules.loading: 1 modules loaded in 0.44s, 0 queries (+0 extra) 
+2023-05-12 20:45:29,548 5012 INFO odoo_new2 odoo.modules.loading: loading 22 modules... 
+2023-05-12 20:45:29,836 5012 INFO ? odoo.http: HTTP Configuring static files 
+2023-05-12 20:45:30,938 5012 INFO odoo_new2 odoo.addons.lunch.tests.test_Negative: Starting TestLunchNegative.test_invalid_supplier ... 
+2023-05-12 20:45:31,433 5012 INFO odoo_new2 odoo.addons.lunch.tests.test_Negative: ====================================================================== 
+2023-05-12 20:45:31,433 5012 ERROR odoo_new2 odoo.addons.lunch.tests.test_Negative: FAIL: TestLunchNegative.test_invalid_supplier
+Traceback (most recent call last):
+  File "C:\Users\divyavemula\Documents\Odoo\server\odoo\modules\registry.py", line 61, in __new__
+    return cls.registries[db_name]
+KeyError: 'odoo_new2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\divyavemula\Documents\Odoo\server\odoo\addons\lunch\tests\test_Negative.py", line 21, in test_invalid_supplier
+    self.assertEqual(supplier.send_by, 'phone')
+AssertionError: 'mail' != 'phone'
+- mail
++ phone
+
+ 
+2023-05-12 20:45:31,700 5012 INFO odoo_new2 odoo.addons.lunch.tests.test_Positive: Starting TestNewSupplierProduct.test_new_supplier_product ... 
+2023-05-12 20:45:32,011 5012 INFO odoo_new2 root: ------Positive Scenario----- 
+2023-05-12 20:45:32,012 5012 INFO odoo_new2 root: ------  Passed Test Case two ------ 
+2023-05-12 20:45:32,015 5012 ERROR odoo_new2 odoo.modules.loading: Module lunch: 1 failures, 0 errors of 2 tests 
+2023-05-12 20:45:32,276 5012 INFO odoo_new2 odoo.modules.loading: 22 modules loaded in 2.73s, 2 queries (+134 extra) 
+2023-05-12 20:45:32,477 5012 ERROR odoo_new2 odoo.modules.loading: At least one test failed when loading the modules. 
+2023-05-12 20:45:32,491 5012 INFO odoo_new2 odoo.modules.registry: Registry loaded in 3.634s 
+2023-05-12 20:45:32,608 5012 INFO odoo_new2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-05-12 20:45:32,609 5012 INFO odoo_new2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-05-12 20:45:32,637 5012 INFO odoo_new2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-05-12 20:45:33,524 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:33] "GET / HTTP/1.1" 303 - 1 0.010 3.486
+2023-05-12 20:45:33,671 5012 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-05-12 20:45:33,801 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:33] "POST /longpolling/im_status HTTP/1.1" 200 - 169 0.593 4.354
+2023-05-12 20:45:38,781 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:38] "GET /web HTTP/1.1" 200 - 230 0.325 4.612
+2023-05-12 20:45:40,678 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:40] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 2 0.003 0.017
+2023-05-12 20:45:40,732 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:40] "POST /web/action/load HTTP/1.1" 200 - 8 0.019 0.026
+2023-05-12 20:45:40,759 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:40] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 5 0.035 0.023
+2023-05-12 20:45:40,759 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:40] "POST /mail/init_messaging HTTP/1.1" 200 - 61 0.150 0.067
+2023-05-12 20:45:40,848 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:40] "POST /longpolling/im_status HTTP/1.1" 200 - 4 0.008 0.011
+2023-05-12 20:45:41,152 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:41] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.005 0.014
+2023-05-12 20:45:41,186 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:41] "POST /mail/inbox/messages HTTP/1.1" 200 - 8 0.031 0.014
+2023-05-12 20:45:41,249 5012 INFO odoo_new2 werkzeug: 127.0.0.1 - - [12/May/2023 20:45:41] "GET /web/image/res.partner/2/avatar_128 HTTP/1.1" 200 - 7 0.006 0.038
